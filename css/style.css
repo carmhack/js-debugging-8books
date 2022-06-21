@@ -1,15 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: #eee;
-    padding: 120px;
     font-family: 'Merriweather', serif;
 }
 
+.container {
+    padding-top: 60px;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    overflow-y: scroll;
+    text-align: center;
+}
+
 .books {
+    padding: 40px 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .book {
@@ -17,21 +31,82 @@ body {
     border-radius: 6px;
     padding: 12px 24px;
     font-size: 18px;
-    flex-basis: 33.3%;
+    width: 30%;
+    margin: 20px;
+}
+
+.book .book-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.book .book-icons .book-icon {
+    width: 30px;
+}
+
+.book-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.book-author {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .book .book-year {
-    background-color: #333;
+    background-color: rgb(95, 95, 227);
     color: #fff;
-    padding: 6px;
+    padding: 6px 12px;
     border-radius: 6px;
+    font-size: 12px;
+    margin-left: 10px;
 }
 
-.book-image {
+.book .book-image {
     text-align: center;
 }
 
-.book img {
-    width: 150px;
-    height: auto;
+.book .book-image img {
+    height: 300px;
+    width: auto;
+}
+
+.book .book-tags {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.book .book-tags .book-tag {
+    background-color: rgb(30, 238, 124);
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.book .book-reading-time {
+    width: 100%;
+    background-color: rgb(221, 59, 59);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.book .book-rating {
+    display: flex;
+    margin: 20px 0;
+}
+
+.book .book-rating img {
+    width: 25px;
+    margin-right: 10px;
 }
