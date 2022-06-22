@@ -129,6 +129,16 @@ const books = [
         pages: '150',
         rating: '6',
     },
+    {
+        id: 12,
+        author: 'Stephen King',
+        title: "Misery",
+        firstPublishingYear: '1987',
+        genres: ['thriller'],
+        originalLanguage: 'Inglese',
+        pages: '358',
+        rating: '8',
+    },
 ]
 
 const booksContainer = document.querySelector('.books');
@@ -139,14 +149,14 @@ books.forEach((book) => {
     });
 
     const chars = { ',': '', "'": '', '.': '', ' ': '', '"': '' };
-    const imageName = book.title.toLowerCase().replace(/[,.' "]/g, match => chars[match]);
-
-    const readingTime = book.pages / 30;
 
     let ratingString = '';
     const rating = book.rating / 2;
     for (let i = 1; i <= rating; i++) {
         ratingString += '<img src="icons/star.png">';
+    }
+    if (rating - parseInt(rating) > 0.5) {
+        ratingString += '<img src="icons/half-star.png">';
     }
     for (let i = rating; i <= 5; i++) {
         ratingString += '<img src="icons/star-empty.png">';
@@ -158,7 +168,7 @@ books.forEach((book) => {
                 <img class="book-icon" src="icons/${iconsByGenres[book.genres[0]]}.png">
             </div>
             <div class="book-image">
-                <img src="images/${imageName}.jpeg" alt="${book.title}">
+                <img src="images/${book.title.toLowerCase().replace(/[,.' "]/g, match => chars[match])}.jpeg" alt="${book.title}">
             </div>
             <h2 class="book-title">
                 ${book.title}
@@ -171,7 +181,7 @@ books.forEach((book) => {
             <div class="book-rating">
                 ${ratingString}
             </div>
-            <p class="book-reading-time">Tempo di lettura: ${readingTime}</p>
+            <p class="book-reading-time">Tempo di lettura: ${book.pages / 30}</p>
         </div>
     `;
 })
