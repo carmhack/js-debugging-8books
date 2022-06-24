@@ -1,24 +1,19 @@
-# Debugging Books App
-
+# JavaScript Debugging
+L'idea alla base di questa repo è permettere ai beginner di JavaScript (o anche a chi è più pratico) di mettersi alla prova con dei bug fix su un codice che non hanno scritto! Se l'idea ti piace fammelo sapere con una stella! <3
+## 8Books App
 Ciao collega, ho bisogno di te, sono disperato! Devo consegnare un progetto ma ho mille bug e non riesco a risolverli. Puoi provare a sistemarli prima che arrivi il BOSS?
 
-## General
-Avevo fretta e ho scritto tutto di getto. Sentiti libero di fare un po' di refactoring.
+> Avevo fretta e ho scritto tutto di getto. Sentiti libero di fare refactoring.
 
-### Get Books
-I libri non vengono visualizzati in pagina. All'avvio ho un alert di errore.
+### Avviare il progetto
+Il progetto è una semplice pagina HTML a cui è collegato un file CSS e un file JS. Puoi aprirla su qualsiasi browser. Per il *server*, invece, ti basta lanciare da terminale `npm run server`. L'API sarà disponibile su `localhost:3000/books`.
 
-### Reading Time
-Il tempo di lettura dei libri da tutti quei numeri decimali. Forse è meglio arrotondare.
-
-### Rating
-Il numero di stelle mostrate in base al rating è fuori scala. Dovrebbero essere 5 in totale, ma in alcuni casi ce ne sono 6.
-
-### Covers
-Di alcuni libri non viene mostrata l'immagine, eppure nella cartella c'è.
-
-### Icons
-Nella card del libro in alto a destra sono rappresentate delle icone che rappresentano il genere principale. Per alcuni libri però le icone non appaiono.
-
-### Tags
-Vedi tutti quegli `undefined` nelle card? Lì dovrebbero esserci i tags del libro, uno per ogni genere, con le label in italiano.
+### Bug Fix
+| Title | Description |
+| ----------- | ----------- |
+| Get Books | I libri non vengono visualizzati in pagina. All'avvio ho un alert di errore. |
+| Reading Time | Il tempo di lettura dei libri mostra tutti quei numeri decimali. Forse è meglio arrotondare. |
+| Rating | Su alcuni libri vengono mostrate 6 stelle, ma dovrebbero essercene 5. |
+| Covers | Di alcuni libri non viene mostrata l'immagine, eppure nella cartella c'è. |
+| Icons | Su alcuni libri non viene mostrata l'icona del genere. | 
+| Tags | Vedi tutti quelle scritte `undefined`? Lì dovrebbero esserci i tags del libro, uno per ogni genere, con le label in italiano. |
