@@ -1,0 +1,84 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "author": "Ernest Hemingway",
+            "title": "Il vecchio e il mare",
+            "firstPublishingYear": "1952",
+            "genres": ["sea", "novel"],
+            "originalLanguage": "Inglese",
+            "pages": "175",
+            "rating": "6.5"
+        },
+        {
+            "id": 2,
+            "author": "Robert Louis Stevenson",
+            "title": "L'isola del tesoro",
+            "firstPublishingYear": "1883",
+            "genres": ["adventure", "novel"],
+            "originalLanguage": "Inglese",
+            "pages": "190",
+            "rating": "7.5"
+        },
+        {
+            "id": 3,
+            "author": "Herman Melville",
+            "title": "Moby Dick",
+            "firstPublishingYear": "1851",
+            "genres": ["sea", "novel"],
+            "originalLanguage": "Inglese",
+            "pages": "422",
+            "rating": "5"
+        },
+        {
+            "id": 4,
+            "author": "J.R.R. Tolkien",
+            "title": "Il signore degli anelli",
+            "firstPublishingYear": "1955",
+            "genres": ["fantasy"],
+            "originalLanguage": "Inglese",
+            "pages": "1255",
+            "rating": "10"
+        },
+        {
+            "id": 5,
+            "author": "Maccio Capatonda",
+            "title": "Libro",
+            "firstPublishingYear": "2020",
+            "genres": ["humour"],
+            "originalLanguage": "Italiano",
+            "pages": "222",
+            "rating": "10"
+        },
+        {
+            "id": 6,
+            "author": "Andrea Camilleri",
+            "title": "La prima indagine di Montalbano",
+            "firstPublishingYear": "2013",
+            "genres": ["thriller", "stories"],
+            "originalLanguage": "Italiano",
+            "pages": "340",
+            "rating": "8"
+        },
+        {
+            "id": 7,
+            "author": "George Orwell",
+            "title": "1984",
+            "firstPublishingYear": "1948",
+            "genres": ["science fiction", "dystopia"],
+            "originalLanguage": "Inglese",
+            "pages": "333",
+            "rating": "9.5"
+        },
+        {
+            "id": 8,
+            "author": "Isaac Asimov",
+            "title": "Io, Robot",
+            "firstPublishingYear": "1950",
+            "genres": ["robot", "stories"],
+            "originalLanguage": "Inglese",
+            "pages": "265",
+            "rating": "7"
+        }
+    ]
+}
